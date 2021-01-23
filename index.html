@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<meta name ="viewport" content="width=device-width, initial-scale =1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+<title> Enosis learning </title>
+<style>
+html{-ms-text-size-adjust:100%;
+-webkit-text-size-adjust:100%;
+
+}
+body{font-family:sans-serif ;
+margin:0;
+height:100%;
+box-sizing:border-box;
+background: linear-gradient(to bottom, #aaffa9, #11ffbd);
+} 
+
+
+.logo { 
+         background:no-repeat; 
+         width: 100px; 
+         height: 100px; 
+         display: block; 
+         text-indent: -9999px;
+         border-radius :50%;
+         z-index :1;
+}
+
+nav {
+	display:inline-block ;
+	
+  box-shadow:0px 2px 0px black;
+  border-color :black;
+}
+ul {
+	margin:0;
+	padding:4px;
+	list-style:none;
+}
+
+ul ul {
+	opacity:0;
+	position:absolute;
+	top:100%;
+	visibility:hidden;
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	z-index :1;
+}
+ul ul ul {
+	top:0%;
+	
+}
+ul ul li:hover > ul {
+	top:0%;
+	left:100%;
+	opacity:1;
+	visibility:visible;
+}
+ul li:hover > ul {
+	opacity:1;
+	top:100%;
+	visibility:visible;
+}
+ul li {
+	float:left;
+	position:relative;
+}
+ul ul li {
+	float:none;
+}
+ul li {
+	background-color: #f2ccd9;
+	  cursor: pointer;
+	 border:1px solid darkgray; 
+}
+ul a {
+	text-decoration:none;
+	display:inline-block ;
+	color:black;
+	padding:4px 16px;
+	width:3em;
+	text-align:center;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+ul li:hover {
+	background-color:darkgray;
+}
+ul li a:hover {
+	background-color:darkgray;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  color:black;
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #e6b3ff;
+  padding: 20px;
+}
+.split {
+    width:30%;
+    position:absolute ;
+    z-index :1;
+    overflow-x :hidden ;
+    padding:5px;
+    
+}
+.split1 {
+    width:65%;
+    position:absolute ;
+    z-index :1;
+    overflow-x :hidden ;
+    padding:5px;
+    
+}
+.left{
+    left:0;
+    background-color :#ffccd9;
+   
+}
+.right {
+    right :0;
+    background-color :#ffccd9;
+}
+
+
+
+.footer{
+    padding-bottom : 10px;
+    z-index :1;
+    background-color :darkgray;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 0.8em 1em;
+  position: relative;
+  text-transform: uppercase;
+} 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+.knockout {
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 20vw;
+  font-family: arial, helvetica;
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+</style>
+<body>
+    <div id="page-container">
+   <div id="content-wrap">
+    <nav>
+    <ul>
+        <li><a href="https://www.enosislearning.com/ ">Home</a></li>
+
+                <li><a href="#">Learn</a>
+                    <ul>
+                        <li><a href="https://www.enosislearning.com/">Courses</a></li>
+                        <li><a href="https://www.enosislearning.com/">tutorials</a></li>
+                        <li><a href="https://www.enosislearning.com/">interview Q&A</a></li>
+                        <li><a href="https://www.enosislearning.com/">Question papers </a> </li>
+                        
+                          
+                            </ul>
+                        </li>
+                   
+                
+                
+            
+        
+        <li><a href="https://www.enosislearning.com/" >clients</a></li>
+        <li><a href="#">Contact</a>
+        <ul>
+        <li><a href="https://www.enosislearning.com/">About</a>
+            </li>
+            <li><a href="https://www.enosislearning.com/">Contact</a></li>
+        </ul>
+        </li>
+    </ul>
+    </nav>
+    <img src="logo.png" class="logo"><br><br><br>
+   
+    <div class="knockout"><a href="https://www.enosislearning.com/">Enosis Learning </a></div>
+     <p style="text-align:center">Enosis Learning All right are reserved www.enosislearning.com 2020 </p>
+    <div style="background-color:#f2ccff; text-align:center ;"><br>
+    <i style="color :white" class="fa fa-phone">7757012054</i>
+    <br>
+ <i style="color:white;"class="fa fa-envelope">
+     courses@enosislearning.com </i><br>
+     <div>
+    <a style="color:white;" href="https://www.linkedin.com/mwlite/company/enosis-solutions-pvt-ltd-">
+<i class="fa fa-linkedin w3-hover-opacity"> Linkedin </i>
+ </a> </div>
+ <div>
+<a style="color:white;" href="https://www.facebook.com/pages/category/Education/140657589442325/">
+ <i class="fa fa-facebook-official w3-hover-opacity"> Facebook </i></a><div>
+<a style="color:white;" href="https://twitter.com/Enosislearning?s=09"> <i class="fa fa-twitter w3-hover-opacity"> Twitter </i></a><br><br>
+
+ </div>
+ <div class="split left">
+     
+  <ul style="background-color:#ff99e6">
+        <button><a href="https://www.enosislearning.com/" >Apply for intership</a></button>
+        <br>
+        <button><a href="https://www.enosislearning.com/"> Apply for jobs</a></button><br>
+        <button><a href="https://www.enosislearning.com/">upload your resume</a></button>
+        <br>
+        <button><a href="https://www.enosislearning.com/ ">request for Demo</a></button>
+      
+</ul>
+</div>
+<div class="split1 right">
+  <div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="number">Contact no</label><br>
+    <input type="text" id="name" name="text" placeholder="Your contact no">
+
+    <label for="course">course</label>
+    <select id="course" name="course">
+      <option value="html">html</option>
+      <option value="css">Css</option>
+      <option value="java">Java</option>
+    </select>
+
+    <label for="mail-id">Mail Id</label>
+    <input type="text" id="" name="name" placeholder="mail ID">
+    <br><br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div></div>
+   
+
+<div>
+    
+     
+
+    <i style="color :white" class="fa fa-phone">7757012054</i>
+    <br>
+ <i style="color:white;"class="fa fa-envelope">
+     courses@enosislearning.com </i><br>
+     <a style="color:white;" href="https://www.linkedin.com/mwlite/company/enosis-solutions-pvt-ltd-">
+<i class="fa fa-linkedin w3-hover-opacity"></i>
+ </a> <br>
+<a style="color:white;" href="https://www.facebook.com/pages/category/Education/140657589442325/">
+ <i class="fa fa-facebook-official w3-hover-opacity"></i></a><br>
+<a style="color:white;" href="https://twitter.com/Enosislearning?s=09"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+ 
+ 
+    
+    
+ </div>
+  
+    
+   
+    
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
